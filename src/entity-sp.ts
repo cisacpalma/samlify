@@ -103,7 +103,7 @@ export class ServiceProvider extends Entity {
     return flow({
       from: idp,
       self: self,
-      checkSignature: true, // saml response must have signature
+      checkSignature: self.entitySetting.wantAssertionsSigned, // saml response must have signature
       parserType: 'SAMLResponse',
       type: 'login',
       binding: binding,

@@ -252,7 +252,7 @@ function logoutRequestRedirectURL(user, entity, relayState?: string, customTagRe
       SessionIndex: user.sessionIndex,
     };
     if (initSetting.logoutRequestTemplate && customTagReplacement) {
-      const info = customTagReplacement(initSetting.logoutRequestTemplate, requiredTags);
+      const info = customTagReplacement(initSetting.logoutRequestTemplate.context, requiredTags);
       id = get(info, 'id', null);
       rawSamlRequest = get(info, 'context', null);
     } else {

@@ -1,7 +1,7 @@
 {
-  "name": "samlify",
-  "version": "2.8.5",
-  "description": "High-level API for Single Sign On (SAML 2.0)",
+  "name": "samlifyx",
+  "version": "0.1.26",
+  "description": "High-level API for Single Sign On (SAML 2.0). Forked from samlify 2.8.5",
   "main": "build/index.js",
   "keywords": [
     "nodejs",
@@ -22,11 +22,11 @@
     "hooks:postinstall": "ln -sf $PWD/.pre-commit.sh $PWD/.git/hooks/pre-commit"
   },
   "contributors": [
-    "Tony Ngan <tonynwk919@gmail.com>"
+    "Christian Isac <cisacpalma@gmail.com>"
   ],
   "author": "tngan",
   "repository": {
-    "url": "https://github.com/tngan/samlify",
+    "url": "https://github.com/cisacpalma/samlify",
     "type": "git"
   },
   "license": "MIT",
