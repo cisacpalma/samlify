@@ -32,5 +32,3 @@ types/
 .vscode
 
 *.tgz
-
-package-lock.json
