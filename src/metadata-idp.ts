@@ -127,7 +127,7 @@ export class IdpMetadata extends Metadata {
   isWantAuthnRequestsSigned(): boolean {
     const was = this.meta.wantAuthnRequestsSigned;
     if (was === undefined) {
-      return false;
+      return true;
     }
     return String(was) === 'true';
   }
